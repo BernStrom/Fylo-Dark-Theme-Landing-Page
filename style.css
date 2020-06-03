@@ -4,3 +4,650 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    background-color: hsl(218, 28%, 13%);
+}
+  
+h1, h3, h4 {
+    font-family: "Raleway", sans-serif;
+}
+  
+/* PAGE HEADER */
+header {
+    padding: 3% 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(217, 28%, 15%);
+}
+  
+.header-logo {
+    margin-left: 0;
+}
+  
+.header-menu ul {
+    display: flex;
+}
+  
+.header-menu li {
+    margin-right: 40px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Raleway", sans-serif;
+    list-style: none;
+    cursor: pointer;
+}
+  
+/* UNDERLINE HOVER EFFECTS for HEADER NAV MENU */
+.header-menu li:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: hsl(176, 68%, 64%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+  
+.header-menu li:hover:after {
+    width: 100%; 
+    left: 0;
+}
+  
+/* INTRO SECTION */
+.intro {
+    padding: 3%;
+    align-items: center;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 28%, 15%);
+    background-image: url("images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+  
+.intro img {
+    width: 500px;
+}
+  
+.intro h1 {
+    padding: 0 30%;
+    line-height: 1.5;
+}
+
+.intro p {
+    padding: 0 34%;
+    line-height: 1.5;
+}
+  
+.intro button {
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(60deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    box-shadow: 2px 5px 10px hsla(257, 40%, 24%, .6);
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.intro button:hover {
+    background-image: linear-gradient(125deg, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+}
+  
+.started {
+    padding-top: 1%;
+}
+  
+/* FEATURES SECTION */
+.top-features {
+    padding: 6% 8%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    background-color: hsl(218, 28%, 13%);
+}
+  
+.top-features p {
+    padding: 0 10%;
+}
+  
+.bottom-features {
+    padding: 3% 8%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    background-color: hsl(218, 28%, 13%);
+}
+  
+.bottom-features p {
+    padding: 0 10%;
+}
+  
+/* PRODUCTIVE SECTION */
+.productive {
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    background-color: hsl(218, 28%, 13%);
+}
+  
+.illustration {
+    width: 500px;
+}
+  
+.productive-description {
+    padding-right: 15%;
+}
+  
+.sample {
+    margin: 0;
+    display: flex;
+    cursor: pointer;
+}
+  
+.arrow {
+    padding-left: 5px;
+}
+  
+/* UNDERLINE HOVER EFFECTS for SAMPLE */
+.sample figcaption:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: hsl(176, 68%, 64%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+  
+.sample figcaption:hover:after {
+    width: 100%; 
+    left: 0;
+}
+  
+/* TESTIMONIAL SECTION */
+.testimonials {
+    padding: 3% 5% 6%;
+    display: flex;
+    justify-content: space-around;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    background-image: url("images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-position: 6% 22%;
+    background-color: hsl(218, 28%, 13%);
+}
+  
+.testimonial {
+    width: 30%;
+    height: 10%;
+    padding: 2%;
+    margin-top: 6%;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    background-color: hsl(219, 30%, 18%);
+    box-shadow: 2px 1px 10px hsla(257, 40%, 44%, .6);
+}
+  
+.profile {
+    display: flex;
+    align-items: center;
+}
+  
+.profile figure {
+    margin: 0;
+}
+  
+.profile img {
+    width: 50px;
+    border-radius: 50%;
+}
+  
+.profile-title {
+    margin-left: 2%;
+}
+  
+.profile-title h4 {
+    font-family: "Raleway", sans-serif;
+    line-height: 0.2;
+}
+  
+.profile-title p {
+    font-size: 0.7rem;
+    line-height: 0.2;
+}
+  
+/* EARLY ACCESS SECTION */
+.early-access {
+    width: 60%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px hsla(257, 40%, 49%, .2);
+    text-align: center;
+    line-height: 1.5;
+    top: 100px;
+    left: 260px;
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(218, 28%, 13%);
+}
+  
+.access-description p {
+    padding: 0 10%;
+}
+  
+.early-access form {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+  
+.early-access input {
+    width: 400px;
+    height: 38px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 25px;
+    font-family: "Raleway", sans-serif;
+}
+  
+.early-access input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+  
+.submit-started {
+    margin-left: 3%;
+}
+  
+.early-access button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: hsl(240, 75%, 98%);
+    background-image: linear-gradient(60deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    box-shadow: 2px 5px 10px hsla(257, 40%, 9%, .2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.early-access button:hover {
+    background-image: linear-gradient(125deg, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+}
+  
+::placeholder { /* Support for Chrome, Firefox, Opera, Safari 10.1+ */
+    padding-left: 10px;
+    color: hsl(0, 0%, 75%);
+    font-size: 14px;
+}
+  
+:-ms-input-placeholder { /* Support for Internet Explorer 10-11 */
+    padding-left: 10px;
+    color: hsl(0, 0%, 75%);
+    font-size: 14px;
+}
+  
+::-ms-input-placeholder { /* Support for Microsoft Edge */
+    padding-left: 10px;
+    color: hsl(0, 0%, 75%);
+    font-size: 14px;
+}
+  
+/* PAGE FOOTER */
+footer {
+    padding: 12% 6% 6%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(216, 53%, 9%);
+}
+  
+.footer-logo figure {
+    margin-left: 0;
+}
+  
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+  
+/* LOCATION */
+.pseudo-location {
+    width: 70%;
+}
+  
+.pseudo-location figure {
+    margin-left: 0;
+    display: flex;
+    line-height: 1.5;
+}
+  
+.locate {
+    width: auto;
+    height: 100%;
+    padding-right: 15px;
+}
+  
+/* CONTACT */
+.contact {
+    width: 25%;
+}
+  
+.phone {
+    display: flex;
+}
+  
+.email {
+    display: flex;
+}
+  
+.call {
+    width: auto;
+    height: 100%;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+  
+.mail {
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+  
+/* NAV MENU */
+.navigation {
+    width: 70%;
+    margin-left: 8%;
+}
+  
+.footer-menu ul {
+    display: flex;
+}
+  
+.footer-menu li {
+    list-style: none;
+    line-height: 2.5;
+    cursor: pointer;
+}
+  
+.menu-one {
+    margin-right: 30%;
+}
+  
+/* UNDERLINE HOVER EFFECTS for NAV MENU */
+.footer-menu li:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: hsl(198, 60%, 50%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+  
+.footer-menu li:hover:after {
+    width: 100%;
+    left: 0;
+}
+  
+/* SOCIAL MEDIA */
+.social-media {
+    width: 40%;
+    display: flex;
+    padding-top: 2%;
+}
+  
+.social-media div {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    font-size: 1.1rem;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 100%;
+    transition: 0.2s;
+}
+  
+.social-media div a {
+    color: hsl(240, 75%, 98%);
+}
+  
+.social-media div:hover {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: 1px solid hsl(198, 60%, 50%);
+}
+  
+/* Any devices, 1200px and below */
+@media only screen and (max-width: 1200px) {
+    /* PAGE HEADER */ 
+    header img {
+      width: 80%;
+      height: auto;
+    }
+    
+    .header-menu ul {
+      width: 100%;
+      padding-left: 0;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+    
+    .header-menu li {
+      margin-right: 30px;
+    }
+    
+    /* INTRO SECTION */
+    .intro {
+      background-image: url("images/bg-curvy-mobile.svg");
+    }
+    
+    .intro h1 {
+      padding: 0;
+    }
+    
+    .intro p {
+      padding: 0 10%;
+    }
+    
+    .intro img {
+      width: 300px;
+    }
+    
+    .started {
+      padding-top: 2%;
+    }
+    
+    /* FEATURES SECTION */
+    .top-features {
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    
+    .top-features p {
+      padding: 0;
+    }
+    
+    .bottom-features {
+      flex-direction: column;
+    }
+    
+    .bottom-features p {
+      padding: 0;
+    }
+    
+    /* PRODUCTIVE SECTION */
+    .productive {
+      flex-direction: column;
+    }
+    
+    .illustration {
+      width: 300px;
+    }
+    
+    .productive-description {
+      padding-right: 0;
+      align-items: center;
+    }
+    
+    .productive-description h1 {
+      font-size: 1.3rem;
+    }
+    
+    /* TESTIMONIAL SECTION */
+    .testimonials {
+      margin-top: 10%;
+      flex-direction: column;
+      line-height: 2;
+      background-position: 3% 1%;
+    }
+    
+    .testimonial {
+      width: 95%;
+      margin-top: 7%;
+    }
+    
+    /* EARLY ACCESS SECTION */
+    .early-access {
+      width: 80%;
+      padding: 5%;
+      left: 35px;
+      font-size: 14px;
+    }
+    
+    .access-description h1 {
+      font-size: 1.2rem;
+    }
+    
+    .access-description p {
+      padding: 0 4%;
+    }
+    
+    .early-access form {
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .early-access .input {
+      height: 45px;
+      width: 90%;
+    }
+    
+    .early-access .submit {
+      height: 45px;
+      width: 90%;
+    }
+    
+    .submit-started {
+      width: 100%;
+      margin-top: 5%;
+    }
+    
+    /* PAGE FOOTER */
+    footer {
+      padding: 200px 5% 10%;
+    }
+    
+    .footer-content {
+      width: 100%;
+      flex-direction: column;
+    }
+    
+    /* LOCATION */
+    .pseudo-location {
+      width: 100%;
+    }
+    
+    /* CONTACT */
+    .contact {
+      width: 100%;
+    }
+    
+    .contact figure {
+      margin-left: 0;
+    }
+    
+    /* NAV MENU */
+    .navigation {
+      margin-left: 0%;
+    }
+    
+    .footer-menu ul {
+      padding-left: 0;
+      flex-direction: column;
+    }
+    
+    .menu-one {
+      margin-bottom: 10%;
+    }
+    
+    /* UNDERLINE HOVER EFFECTS */
+    .footer-menu li:hover:after {
+      width: 75px; 
+      left: 0;
+    }
+    
+    /* SOCIAL MEDIA */
+    .social-media {
+      width: 100%;
+      margin: 4% 0;
+      justify-content: center;
+    }
+    
+    .social-media div {
+      width: 30px;
+      height: 30px;
+    }
+    
+    .social-media div a {
+      font-size: 15px;
+    }
+}
+  
+/* Any devices, starting from 500px and above */
+@media only screen and (min-width: 500px) and (max-width: 1200px) {
+    .productive-description {
+      text-align: center;
+    }
+    
+    .sample {
+      margin-top: 5%;
+      justify-content: center;
+    }
+}
+  
+/* Any devices, starting from 600px and above */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+      .menu-one {
+        margin-bottom: 6%;
+    }
+}
