@@ -143,6 +143,7 @@ header {
 .productive {
     padding: 3%;
     display: flex;
+    justify-content: center;
     align-items: center;
     color: hsl(0, 0%, 100%);
     line-height: 1.5;
