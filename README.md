@@ -10,7 +10,7 @@ This project was build on purely HTML and CSS.
 
 ## Introduction
 
-The Fylo Landing Page with Dark Theme and Features Grid is a project for practicing website layout and responsive desgin in CSS.
+The Fylo Landing Page with Dark Theme and Features Grid is a project for practicing website layout and responsive design in CSS.
 
 It is a bigger, separate project build on top of the [Fylo Landing Page with Two Column Layout](https://github.com/BernStrom/Fylo-Landing-Page-with-Two-Column-Layout/ "Fylo Landing Page with Two Column Layout") project. This is an extension version with a different layout design and some additional content added on top of the previous project.
 
