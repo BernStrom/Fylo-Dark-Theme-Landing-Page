@@ -1,8 +1,17 @@
+<p align="center">
+  <a href="#introduction">Introduction</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#objectives-of-the-project">Objectives</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#gear-technical-components">Technical Components</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#bookmark-attribution">Attribution</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#camera_flash-screenshots-of-responsive-design">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
+
 ## Fylo Landing Page with Dark Theme and Features Grid
 
 ![Design preview for the Fylo landing page with dark theme and features grid challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## 👋 Welcome!
 
 Thanks for checking out this project.
 
@@ -32,7 +41,7 @@ And don't forget the core of it all, _**Happy coding!🚀**_
 
 _P.S:_ _**Hover state features is not applicable on touchscreen devices, as it is only available through hovering over with a mouse cursor.**_
 
-## Technical Components :gear:
+## :gear: Technical Components
 
 * Flexbox
 
@@ -40,13 +49,13 @@ _P.S:_ _**Hover state features is not applicable on touchscreen devices, as it i
 
 * Numerous placeholders for support across different browser and their versions
 
-## Attribution :bookmark:
+## :bookmark: Attribution
 
 [UI social media icons by Font Awesome](https://fontawesome.com/ "Font Awesome")
 
 [Responsive design testing app by Sizzy](https://a.paddle.com/v2/click/49831/114619?link=1947/ "Sizzy.co")
 
-## Screenshots of Responsive Design :camera_flash:
+## :camera_flash: Screenshots of Responsive Design
 
 #### Phone (iPhone 11 @ 414 x 896)
 ![Page preview on iPhone 11](./screenshots/iPhone-11_(414x896).png)
@@ -58,3 +67,7 @@ _P.S:_ _**Hover state features is not applicable on touchscreen devices, as it i
 
 #### PC / Laptop (MacBook Pro 15 @ 1680 x 1050)
 ![Page preview on MacBook Air](./screenshots/Macbook-Pro-15_(1680x1050).png)
+<hr />
+
+## :memo: License
+This project is under the MIT License. For more information, please refer to the license [documentation](LICENSE.md).
